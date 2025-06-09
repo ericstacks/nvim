@@ -1,0 +1,6 @@
+clipboard
+
+cd ~ &&
+curl -LO https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip &&
+unzip win32yank-x64.zip -d ~/.local/bin &&
+chmod +x ~/.local/bin/win32yank.exe

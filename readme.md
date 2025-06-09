@@ -1,0 +1,3 @@
+# nvim
+
+Config files archlinux
