@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
@@ -27,12 +25,12 @@ vim.o.foldcolumn = "1"
 
 -- Autocmd para reforçar folding no filetype correto
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "typescriptreact",
-  callback = function()
-    vim.wo.foldmethod = "expr"
-    vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-    vim.wo.foldenable = true
-    vim.wo.foldlevel = 99
-    vim.wo.foldcolumn = "1"
-  end,
+    pattern = "typescriptreact",
+    callback = function()
+        vim.wo.foldmethod = "expr"
+        vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+        vim.wo.foldenable = true
+        vim.wo.foldlevel = 99
+        vim.wo.foldcolumn = "1"
+    end,
 })
