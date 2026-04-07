@@ -8,3 +8,6 @@ vim.keymap.set('v', '<leader>ca', vim.lsp.buf.code_action,
     { noremap = true, silent = true, desc = "LSP Code Action (Visual)" })
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { noremap = true, silent = true, desc = "LSP Code Action" })
 keymap("n", "<leader>ma", "<cmd>Lspsaga code_action<CR>", opts)
+
+vim.keymap.set("n", "<leader>cc", ":CopilotChat<CR>")
+vim.keymap.set("v", "<leader>ce", ":CopilotChatExplain<CR>")
